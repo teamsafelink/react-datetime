@@ -349,6 +349,8 @@ export default class Datetime extends React.Component {
 		);
 
 		let update = {viewDate: viewDate};
+
+		console.log('viewDate 3.1.1');
 		if ( currentView === updateOnView ) {
 			update.selectedDate = viewDate.clone();
 			update.inputValue = viewDate.format( this.getFormat('datetime') );
